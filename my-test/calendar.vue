@@ -610,8 +610,9 @@
       },
       // 显示日期
       showCalendar(){
+        this.rangeEndTemp = 1;
         this.show = true;
-        this.$emit('showCalendar', this.rangeBegin, this.rangeEnd)
+        this.$emit('showCalendar')
       },
       // 关闭日期
       hideCalendar(){
